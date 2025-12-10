@@ -7,12 +7,14 @@ import RootLayout from "./layout/RootLayout";
 import ContactInfo from "./components/ContactInfo";
 import ContactForm from "./components/ContactForm";
 import NotFound from "./components/NotFound";
+
 import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+
 import JobsLayout from "./layout/JobsLayout";
 import Jobs, { jobsLoader} from "./pages/Jobs";
 import JobDetails, { jobDetailsLoader } from "./components/JobDetails";
