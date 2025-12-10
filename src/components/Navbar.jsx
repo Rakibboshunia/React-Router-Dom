@@ -1,9 +1,11 @@
 import React from 'react'
-import logo from '../assets/img/logo5.png'
-import {Link} from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo5.png'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className='navbar'>
       <img src={logo} alt="" width="130px" />
@@ -12,8 +14,9 @@ const Navbar = () => {
         <NavLink to='/product'><li>Products</li></NavLink>
         <NavLink to='/about'><li>About</li></NavLink>
         <NavLink to='/contact'><li>Contact</li></NavLink>
+        <NavLink to='/jobs'><li>Jobs</li></NavLink>
       </ul>
-      <button>Get Started</button>
+      <button onClick={()=> navigate('/')}>Get Started</button>
     </div>
   )
 }
