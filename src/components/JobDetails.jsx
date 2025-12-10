@@ -15,7 +15,6 @@ const JobDetails = () => {
     </div>
   )
 }
-
 export default JobDetails
 
 export const jobDetailsLoader = async ({params})=>{
